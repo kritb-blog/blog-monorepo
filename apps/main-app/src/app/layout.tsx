@@ -1,4 +1,10 @@
 import './global.css';
+import { Prompt } from 'next/font/google'
+
+export const promptFont = Prompt({
+  subsets: ['latin', 'thai'],
+  weight: ['400', '500', '600'],
+})
 
 export const metadata = {
   title: 'Krit Bannachaisirisuk',
@@ -11,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className={promptFont.className}>
       <body>{children}</body>
     </html>
   );
