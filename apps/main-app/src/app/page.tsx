@@ -8,20 +8,31 @@ export default function Index() {
    * Note: The corresponding styles are in the ./index.tailwind file.
    */
   return (
-    <div className="wrapper">
-      <Typography size="normal">Hello, World!</Typography>
-      <Banner>
-        <a
-          className="flex gap-2"
-          href="https://github.com/kritb-blog/blog-monorepo"
-        >
+    <div>
+      <div className="p-4">
+        <Typography size="xl" weight="semibold">
+          Krit Bannachaisirisuk
+        </Typography>
+      </div>
+      <Banner className="gap-4">
+        <a target="_blank" href="https://github.com/zestzero">
           <Image
             src="/images/github.svg"
             alt="github repository"
-            width={24}
-            height={24}
+            width={28}
+            height={28}
           />
-          blog-monorepo
+        </a>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/krit-bannachaisirisuk/"
+        >
+          <Image
+            src="/images/linkedin.svg"
+            alt="linkedin profile"
+            width={28}
+            height={28}
+          />
         </a>
       </Banner>
     </div>

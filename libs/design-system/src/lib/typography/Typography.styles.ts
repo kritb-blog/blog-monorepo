@@ -1,11 +1,13 @@
-import { cva, type VariantProps } from "class-variance-authority";
+import { cva, type VariantProps } from 'class-variance-authority';
 
 export type TypographyVariantProps = VariantProps<typeof typographyVariants>;
-export const typographyVariants = cva("span", {
+export const typographyVariants = cva('span', {
   variants: {
-    size: { normal: "font-normal" }
+    size: { sm: 'text-sm', md: 'text-md', lg: 'text-lg', xl: 'text-xl' },
+    weight: { normal: 'font-normal', semibold: 'font-semibold' },
   },
   defaultVariants: {
-    size: "normal"
+    size: 'md',
+    weight: 'normal',
   },
 });

@@ -1,11 +1,11 @@
 import { PropsWithChildren } from 'react';
-import { BannerVariantProps, bannerVariants } from './Banner.styles';
+import { bannerVariants, type BannerVariantProps } from './Banner.styles';
+import { type WithClassName } from '../types';
 
-export type BannerProps = BannerVariantProps & PropsWithChildren;
+export type BannerProps = PropsWithChildren<BannerVariantProps> & WithClassName;
 
-const Banner = (props: BannerProps) => {
-  const { children, position } = props;
-  return <div className={bannerVariants({ position })}>{children}</div>;
+const Banner = ({ children, position, className }: BannerProps) => {
+  return <div className={bannerVariants({ position, className })}>{children}</div>;
 };
 
 export { Banner };

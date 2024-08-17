@@ -1,6 +1,6 @@
 import { PropsWithChildren } from 'react';
 import {
-  TypographyVariantProps,
+  type TypographyVariantProps,
   typographyVariants,
 } from './Typography.styles';
 
@@ -9,10 +9,10 @@ export type TypographyProps = TypographyVariantProps &
   React.ParamHTMLAttributes<HTMLParagraphElement>;
 
 const Typography = (props: TypographyProps) => {
-  const { size, className } = props;
+  const { size, weight, className } = props;
 
   return (
-    <p className={typographyVariants({ size, className })}>
+    <p className={typographyVariants({ size, weight, className })}>
       {props.children}
     </p>
   );
