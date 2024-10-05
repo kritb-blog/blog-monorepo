@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 export const Navbar = () => {
   return (
-    <nav className="px-8 py-4 w-screen flex items-center gap-4 justify-between shadow-md">
+    <nav className="px-8 py-4 w-screen flex items-center gap-4 justify-between">
       <Typography size="xl" weight="semibold">
         <Link className="flex" href="/">
           <Image
@@ -28,6 +28,7 @@ export const Navbar = () => {
           <Tooltip
             trigger={
               <Image
+                className="dark:bg-primary dark:rounded-sm dark:p-1"
                 src="/images/github.svg"
                 alt="github repository"
                 width={28}
@@ -45,6 +46,7 @@ export const Navbar = () => {
           <Tooltip
             trigger={
               <Image
+                className="dark:bg-primary dark:rounded-sm dark:p-1"
                 src="/images/linkedin.svg"
                 alt="linkedin profile"
                 width={28}
