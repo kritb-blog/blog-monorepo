@@ -1,5 +1,6 @@
 import './global.css';
 import { Prompt } from 'next/font/google';
+import { ThemeProvider } from './providers/ThemeProvider';
 
 const promptFont = Prompt({
   subsets: ['latin', 'thai'],
@@ -18,7 +19,16 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={promptFont.className}>
-      <body>{children}</body>
+      <body>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
