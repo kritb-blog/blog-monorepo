@@ -35,7 +35,7 @@ export const TypingAnimation = ({
   return (
     <h1
       className={cn(
-        'font-display text-center text-4xl font-bold leading-[5rem] tracking-[-0.02em] drop-shadow-sm',
+        'font-display text-center text-2xl md:text-4xl font-bold leading-[3rem] md:leading-[5rem] tracking-[-0.02em] drop-shadow-sm',
         className
       )}
     >
