@@ -1,5 +1,6 @@
 import { Banner, Typography } from '@kritb-blog/design-system';
 import Image from 'next/image';
+import { NavigationMenuDemo } from './components/Navbar';
 
 export default function Index() {
   /*
@@ -9,6 +10,8 @@ export default function Index() {
    */
   return (
     <div>
+      <NavigationMenuDemo />
+
       <div className="p-4">
         <Typography size="xl" weight="semibold">
           Krit Bannachaisirisuk

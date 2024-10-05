@@ -1,10 +1,10 @@
 import './global.css';
-import { Prompt } from 'next/font/google'
+import { Prompt } from 'next/font/google';
 
 const promptFont = Prompt({
   subsets: ['latin', 'thai'],
   weight: ['400', '500', '600'],
-})
+});
 
 export const metadata = {
   title: 'Krit Bannachaisirisuk',
