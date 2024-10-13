@@ -1,3 +1,4 @@
+import { DotPattern } from '@/libs/design-system/src'
 import { Prompt } from 'next/font/google'
 import { Navbar } from './components/Navbar'
 import './global.css'
@@ -39,6 +40,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           <Navbar />
           {children}
+          <DotPattern
+            width={25}
+            height={25}
+            cx={4}
+            cy={4}
+            cr={1}
+            className="[mask-image:linear-gradient(to_bottom_right,white,transparent,transparent)]"
+          />
         </ThemeProvider>
       </body>
     </html>

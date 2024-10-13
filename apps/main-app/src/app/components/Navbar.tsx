@@ -1,30 +1,19 @@
-'use client';
+'use client'
 
-import Link from 'next/link';
-import { Tooltip, Typography } from '@kritb-blog/design-system';
-import React from 'react';
-import Image from 'next/image';
+import { Tooltip, Typography } from '@kritb-blog/design-system'
+import Image from 'next/image'
+import Link from 'next/link'
 
 export const Navbar = () => {
   return (
     <nav className="px-8 py-4 w-screen flex items-center gap-4 justify-between">
-      <Typography size="xl" weight="semibold">
+      <Typography size="lg" weight="semibold" className="flex gap-4 items-center">
         <Link className="flex" href="/">
-          <Image
-            className="bg-primary rounded-full"
-            src="/ms-icon-70x70.png"
-            alt="logo"
-            width={48}
-            height={48}
-          />
+          <Image className="bg-primary rounded-full" src="/ms-icon-70x70.png" alt="logo" width={48} height={48} />
         </Link>
       </Typography>
       <div className="flex gap-4">
-        <Link
-          className="flex"
-          target="_blank"
-          href="https://github.com/zestzero"
-        >
+        <Link className="flex" target="_blank" href="https://github.com/zestzero">
           <Tooltip
             trigger={
               <Image
@@ -38,11 +27,7 @@ export const Navbar = () => {
             content="Github profile"
           />
         </Link>
-        <Link
-          className="flex"
-          target="_blank"
-          href="https://www.linkedin.com/in/krit-bannachaisirisuk/"
-        >
+        <Link className="flex" target="_blank" href="https://www.linkedin.com/in/krit-bannachaisirisuk/">
           <Tooltip
             trigger={
               <Image
@@ -58,5 +43,5 @@ export const Navbar = () => {
         </Link>
       </div>
     </nav>
-  );
-};
+  )
+}
