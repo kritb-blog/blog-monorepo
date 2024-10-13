@@ -15,8 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@kritb-blog/design-system": ["libs/design-system/src/index.ts"],
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "@kritb-blog/design-system": ["libs/design-system/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
