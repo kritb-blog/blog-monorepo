@@ -1,0 +1,10 @@
+{
+  "format_on_save": "on",
+  "formatter": {
+    "code_actions": {
+      "source.fixAll.prettier": true,
+      // Organize imports on save:
+      "source.organizeImports": true
+    }
+  }
+}

@@ -1,17 +1,17 @@
-import { useId } from 'react';
+import { useId } from 'react'
 
-import { cn } from '../utils';
+import { cn } from '../utils'
 
 export type DotPatternProps = React.SVGProps<SVGSVGElement> & {
-  width?: number;
-  height?: number;
-  x?: number;
-  y?: number;
-  cx?: number;
-  cy?: number;
-  cr?: number;
-  className?: string;
-};
+  width?: number
+  height?: number
+  x?: number
+  y?: number
+  cx?: number
+  cy?: number
+  cr?: number
+  className?: string
+}
 
 export const DotPattern = ({
   width = 16,
@@ -24,15 +24,12 @@ export const DotPattern = ({
   className,
   ...props
 }: DotPatternProps) => {
-  const id = useId();
+  const id = useId()
 
   return (
     <svg
       aria-hidden="true"
-      className={cn(
-        'pointer-events-none absolute inset-0 h-full w-full fill-neutral-400/80',
-        className
-      )}
+      className={cn('pointer-events-none absolute inset-0 h-full w-full fill-primary/80', className)}
       {...props}
     >
       <defs>
@@ -50,5 +47,5 @@ export const DotPattern = ({
       </defs>
       <rect width="100%" height="100%" strokeWidth={0} fill={`url(#${id})`} />
     </svg>
-  );
-};
+  )
+}
