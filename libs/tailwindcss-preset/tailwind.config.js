@@ -1,10 +1,19 @@
-const { fontFamily } = require('tailwindcss/defaultTheme');
+const { fontFamily } = require('tailwindcss/defaultTheme')
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ['class'],
   content: ['app/**/*.{ts,tsx}', 'components/**/*.{ts,tsx}'],
   theme: {
+    fontSize: {
+      sm: ['0.8rem', '1rem'],
+      base: ['1rem', '1.25rem'],
+      xl: ['1.25rem', '1.5rem'],
+      '2xl': '1.563rem',
+      '3xl': '1.953rem',
+      '4xl': '2.441rem',
+      '5xl': '3.052rem',
+    },
     container: {
       center: true,
       padding: '2rem',
@@ -73,4 +82,4 @@ module.exports = {
     },
   },
   plugins: [require('tailwindcss-animate')],
-};
+}
