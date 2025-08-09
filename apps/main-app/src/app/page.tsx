@@ -23,10 +23,10 @@ export default function Index() {
             Beyond technical execution, I am deeply committed to mentoring junior engineers, enhancing recruitment
             processes, and optimizing development workflows. I have actively contributed to business and technical
             planning strategies to ensure the successful delivery of projects that support long-term organizational
-            goals. My academic credentials, including a Master's degree in Computer Science and certifications such as
-            Microsoft Specialist in HTML5, JavaScript, and CSS3, underscore my dedication to continuous professional
-            development. With a focus on precision, efficiency, and innovation, I am driven to solve complex challenges
-            and deliver impactful, high-quality digital solutions.
+            goals. My academic credentials, including a Master&rsquo;s degree in Computer Science and certifications
+            such as Microsoft Specialist in HTML5, JavaScript, and CSS3, underscore my dedication to continuous
+            professional development. With a focus on precision, efficiency, and innovation, I am driven to solve
+            complex challenges and deliver impactful, high-quality digital solutions.
           </Typography>
         </div>
       </section>
